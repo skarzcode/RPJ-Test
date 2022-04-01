@@ -674,8 +674,8 @@ button:hover{
     }
 
     .feauture-container{
-        background-color: #89b443;
-        height: 900px;
+        background-color: #2b3121;
+        height: 710px;
     }
 
     .middle{
@@ -841,11 +841,11 @@ button:hover{
     }
     
     .Details{
-        top: 450;
+        top: 650;
     }
     
     .middle{
-        top:40%;
+        top:60%;
     }
       
 
@@ -870,7 +870,7 @@ button:hover{
 }
 
 .feauture-container{
-    background-color: #89b443;
+    background-color: #2b3121;
    height: 600px;
    top: 20px;
 }
@@ -938,7 +938,7 @@ button:hover{
 
 .slide-navigation{
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -955,7 +955,7 @@ button:hover{
 }
 
 .Details{
-    top: 550;
+    top: 650;
 }
 
 .middle-container {
