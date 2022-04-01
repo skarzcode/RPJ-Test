@@ -667,6 +667,27 @@ button:hover{
         left: 5;
     }
 
+    .middle-container {
+        background-color: blue;
+        height: auto;
+        min-height: 1200px;
+    }
+
+    .feauture-container{
+        background-color: #89b443;
+        height: 900px;
+    }
+
+    .middle{
+        top:50%;
+    }
+
+    .Details {
+        top: 700;
+    }
+
+    
+
 }
 
     @media only screen and (max-width: 1000px) {
@@ -824,7 +845,7 @@ button:hover{
     }
     
     .middle{
-        top:50%;
+        top:40%;
     }
       
 
@@ -850,7 +871,7 @@ button:hover{
 
 .feauture-container{
     background-color: #89b443;
-   height: auto;
+   height: 600px;
    top: 20px;
 }
 
