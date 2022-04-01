@@ -9,6 +9,23 @@ body{
     background-color: white;
 }
 
+
+
+.outer-card{
+    width: auto;
+    height: auto;
+}
+
+.middle-container{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    min-height: 900px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
 .bannerTxt{
     font-size: 10px;
 font-weight: bold;;
@@ -32,12 +49,13 @@ header ul li::before {
   }
 
   .feauture-container{
-      width: 100%;
-      height: 900px;
+      width: 90%;
+      height: auto;
       background-color: #ffffff;
       padding-top: 0px;
       position: relative;
       animation: dev-animation 0.6s  ease-in-out;
+      margin: 0 auto;
       
       
   }
@@ -77,11 +95,10 @@ button:hover {
     font-family: 'Domine', serif;
   }
 
+ 
+
   .feature-content{
-      width: 90%;
-      height: auto;
-      background-color: rgb(158, 142, 142);
-      margin: 0px; 
+     display: hidden;
   }
 
   .featured-info{
@@ -115,9 +132,6 @@ button:hover {
       position: absolute;
   }
 
-  
-
-  
 
   .featured-info h1,h3{
    padding: 7px;
@@ -136,8 +150,8 @@ button:hover {
       background-color: #a0d2eb4d;
       margin: 0 auto;
       position: absolute;
-    top: 509    ;
-    right: 50;
+     top: 265;
+        right: -40;
     font-size: 14px;
   }
 
@@ -162,11 +176,6 @@ button:hover {
   .content-details p {
       padding: 15px;
   }
-
-  .Container-header{
-
-  }
-
 
 
 .slidershow{
@@ -242,25 +251,10 @@ input[name="r"]{
     margin-left: -80%;
 }
 
-
-
-
-
-
-
 button:hover{
     background-color: #979494;
 }
 
-
-
-
-
-
-
-
-
-  
 .Development{
     margin-top: 50px;
 }
@@ -271,7 +265,6 @@ button:hover{
     height: auto;
     background-color: #d2e7e37c;
     margin-top: 0px;
-  
 }
 
 .Container-header{
@@ -301,7 +294,7 @@ button:hover{
 
 .property-img{
     width: 45%;
-    background-image: url("samuel-regan-asante-Mn6hv2vjD_E-unsplash.jpg");
+    background-image: url("assets/samuel-regan-asante-Mn6hv2vjD_E-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -311,20 +304,20 @@ button:hover{
 }
 
 .two{
-    background-image: url("martin-sepion-NP9VBSCzEuU-unsplash (2).jpg");
+    background-image: url("assets/martin-sepion-NP9VBSCzEuU-unsplash (2).jpg");
     display: hidden; 
 }
 
 .three{
-    background-image: url("jonny-gios-EeOKpqx9CtM-unsplash.jpg");
+    background-image: url("assets/jonny-gios-EeOKpqx9CtM-unsplash.jpg");
 }
 
 .four{
-    background-image: url("pexels-adrien-olichon-3884472.jpg");
+    background-image: url("assets/pexels-adrien-olichon-3884472.jpg");
 }
 
 .five{
-    background-image: url("pexels-roméo-1560099.jpg");
+    background-image: url("assets/pexels-roméo-1560099.jpg");
 }
 
 .Development-price{
@@ -373,12 +366,6 @@ button:hover{
       list-style: none;
   }
   
-  
-
-
-
-
-
 .Content-container h3,h4,p{
     padding-left: 12px;
     font-family: "Open Sans", sans-serif;;
@@ -572,6 +559,42 @@ button:hover{
     }
 }
 
+@media screen and (min-width: 2000px) {
+    .outer-card{
+        width: 2000px;
+        max-width: 2200px;
+        height: auto;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .content-details{
+        width: 500px;
+        height: auto;
+        background-color: #a0d2eb4d;
+        margin: 0 auto;
+        position: absolute;
+      top: 270;
+     
+      font-size: 14px;
+    }
+
+    .Outer-Container{
+        width: 60%;
+        max-width: 2200px;
+        margin: 0 auto;
+    }
+
+    .feauture-container{
+        width: 1500px;
+        max-width: 1500px;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    
+}
+
 @media only screen and (max-width: 1400px) {
 
     .content-details {
@@ -580,15 +603,19 @@ button:hover{
         background-color: #a0d2eb4d;
         margin: 20 auto;
         position: relative;
-        top: 100;
+        top: 0;
         left: 0;
+        font-size: 12px;
+       
     }
 
     .Details{
         position: relative;
-        top: 60;
+        top: 510;
         left: 0;
     }
+
+    .feature-content{}
 
     .middle{
         position: absolute;
@@ -610,9 +637,25 @@ button:hover{
     margin-left: 10px;
 }
 
+
+.middle {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-@media only screen and (max-width: 1000px) {
+.Details{
+    top: 570;
+}
+
+.inner-icon-container {
+    left: -115; 
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
     .development-info li {
         font-size: 11px;
         padding: 1px;
@@ -624,8 +667,10 @@ button:hover{
         left: 5;
     }
 
-    @media only screen and (max-width: 1000px) {
+}
 
+    @media only screen and (max-width: 1000px) {
+  
         .banner{
             flex-direction: column;
         }
@@ -729,6 +774,17 @@ button:hover{
     display: flex;
     margin: 20px;
 }
+.content-details {
+    width: 100%;
+    height: auto;
+    background-color: #a0d2eb4d;
+    margin: 20 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+}
+
 
 }
 
@@ -752,6 +808,38 @@ button:hover{
 
 }
 
+@media only screen and (max-width: 600px) {
+    .content-details {
+        width: 100%;
+        height: auto;
+        background-color: #D2E7E3;
+        margin: 20 auto;
+        position: relative;
+        top: 30;
+        left: 0;
+    }
+    
+    .Details{
+        top: 450;
+    }
+    
+    .middle{
+        top:50%;
+    }
+      
+
+    .inner-icon-container {
+        left: -80;
+    }
+
+    .Development-cards {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        margin: 20px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .slidershow{
         width: 90%;
@@ -768,6 +856,18 @@ button:hover{
 
 .Development {
     margin-top: 100px;
+}
+
+.content-details {
+    width: 100%;
+    height: auto;
+    background-color: #a0d2eb4d;
+    margin: 20 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+   
 }
 
 
@@ -806,7 +906,7 @@ button:hover{
     width: 100%;
     position: absolute;
     top:100;
-    left: -30;
+    left: -15;
     display: flex;
     justify-content: space-evenly;
 }
@@ -833,6 +933,18 @@ button:hover{
     left: 0;
 }
 
+.Details{
+    top: 550;
+}
+
+.middle-container {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    min-height: 1100px;
+    position: relative;
+    margin: 0 auto;
+}
 
 
 }

@@ -23,6 +23,11 @@ body {
     margin: auto;
 }
 
+.outer-card{
+    width: auto;
+    height: auto;
+}
+
 li,
 a,
 button {
@@ -158,6 +163,8 @@ nav {
     left: 32%;
 }
 
+
+
 .nav_links ul li {
     list-style: none;
 }
@@ -167,6 +174,7 @@ nav {
     padding: 0px 55px;
     margin: 0px auto;
 }
+
 
 .nav_links li a {
     text-decoration: none;
@@ -178,6 +186,10 @@ nav {
 
 .nav_links li a:hover {
     color: #87e135;
+}
+
+#hidden{
+    display: none;
 }
 
 
@@ -205,7 +217,7 @@ button:hover {
     width: 95%;
     height: 90vh;
     overflow: hidden;
-    background: var(--primary-color) url("Brooke Road clip_Moment.jpg") no-repeat center center/cover;
+    background: var(--primary-color) url("assets/Brooke Road clip_Moment.jpg") no-repeat center center/cover;
 
 }
 
@@ -458,7 +470,7 @@ left: 30;
     grid-column: 1 / 2;
     grid-row: 1/ 4;
     border-radius:15px;
-    background-image: url("samuel-regan-asante-Mn6hv2vjD_E-unsplash.jpg");
+    background-image: url("assets/samuel-regan-asante-Mn6hv2vjD_E-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -468,7 +480,7 @@ left: 30;
     grid-row: 1 / 4;
     border-radius:15px;
     object-fit: contain;
-    background-image: url("martin-sepion-NP9VBSCzEuU-unsplash (2).jpg");
+    background-image: url("assets/martin-sepion-NP9VBSCzEuU-unsplash (2).jpg");
     background-repeat: no-repeat;
     background-position: top top;
     background-size: cover;
@@ -479,7 +491,7 @@ left: 30;
     grid-row: 4/ 7 ;
     border-radius:15px;
     object-fit: contain;
-    background-image: url("jonny-gios-EeOKpqx9CtM-unsplash.jpg");
+    background-image: url("assets/jonny-gios-EeOKpqx9CtM-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -490,7 +502,7 @@ left: 30;
     grid-row: 4/ 7;
     border-radius:15px;
     object-fit: contain;
-    background-image: url("pexels-adrien-olichon-3884472.jpg");
+    background-image: url("assets/pexels-adrien-olichon-3884472.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -501,7 +513,7 @@ left: 30;
     grid-row: 4/ 7;
     border-radius:15px;
     object-fit: contain;
-    background-image: url("pexels-roméo-1560099.jpg");
+    background-image: url("assets/pexels-roméo-1560099.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -512,7 +524,7 @@ left: 30;
     grid-row: 4/ 7;
     border-radius:15px;
     object-fit: contain;
-    background-image: url("burcin-ergunt--AQ-cpajVVY-unsplash.jpg");
+    background-image: url("assets/burcin-ergunt--AQ-cpajVVY-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -585,8 +597,6 @@ left: 30;
     margin: 0;
 padding: 3rem;
 width: 90%;
-background-color: red;
-
 }
 
 .faq-container h2{
@@ -743,13 +753,11 @@ width: 0;
 }
 
 .blog-post{
-    width: 23%;
+    width:320px;
     height: 400px;
     background-color: #979494;
-    border-radius: 18px;
     position: relative;
-    transition: all .2s ease-in-out; 
-    cursor: pointer;
+    transition: all .2s ease-in-out;
     color: white;
 }
 
@@ -787,8 +795,7 @@ width: 0;
 .blog-post img{
     width: 100%;
     object-fit: contain;
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+    
     
 }
 
@@ -1045,6 +1052,35 @@ h1 {
 
 
     }
+}
+
+@media screen and (min-width: 2200px) {
+   .outer-card{
+       width: 2200px;
+       max-width: 2200px;
+       height: auto;
+       margin: 20px auto;
+   }
+
+   .aside{
+    width: 4%;
+}
+
+.aside p {
+    left: 25%; 
+}
+
+.video-container{
+    width: 96%;
+    left: 4%;
+}
+
+nav{
+    left: 40%;
+}
+
+
+  
 }
 
 
@@ -1362,8 +1398,12 @@ align-items: flex-start;
     .nav_links li {
         display: block;
         padding: 0px;
-        margin: 50px 10px;
+        margin: 20px 10px;
         width: 50%;
+    }
+
+    #hidden {
+        display: block;
     }
     
     .aside{
@@ -1381,7 +1421,7 @@ align-items: flex-start;
 
     nav {
         width: 100%;
-        height: 100vh;
+        height: 200;
         text-align: left;
         position: absolute;
         top: 100%;
@@ -1567,8 +1607,8 @@ align-items: flex-start;
 
     
     .blog-post{
-        height: 300px;
-        width: 50%;
+        height: 340px;
+        width: 60%;
         margin: 20px;
         
     }
@@ -1631,6 +1671,7 @@ align-items: flex-start;
     }
 
     .video-container {
-        background-image: url('jose-llamas-SJPrbVaHo-Q-unsplash-min.jpg');
+        background-image: url('assets/jose-llamas-SJPrbVaHo-Q-unsplash-min.jpg');
     }
 }
+
