@@ -849,8 +849,8 @@ button:hover{
 }
 
 .feauture-container{
-    background-color: #D2E7E3;
-   height: 560px;
+    background-color: #89b443;
+   height: auto;
    top: 20px;
 }
 
@@ -943,7 +943,8 @@ button:hover{
     height: auto;
     min-height: 1100px;
     position: relative;
-    margin: 0 auto;
+    margin: 50 auto;
+    background-color: blue;
 }
 
 
