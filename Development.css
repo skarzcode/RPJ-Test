@@ -20,7 +20,7 @@ body{
     width: 100%;
     max-width: 1600px;
     height: auto;
-    min-height: 900px;
+    min-height: 1000px;
     position: relative;
     margin: 0 auto;
     
@@ -611,7 +611,7 @@ button:hover{
 
     .Details{
         position: relative;
-        top: 510;
+        top: 610;
         left: 0;
     }
 
@@ -850,7 +850,7 @@ button:hover{
 
 .feauture-container{
     background-color: #D2E7E3;
-   height: 500px;
+   height: 560px;
    top: 20px;
 }
 
