@@ -645,6 +645,10 @@ margin-top: 25px;
     
 }
 
+#about-button{
+    display: none;
+}
+
 
 @keyframes about-animation {
     0%{
@@ -776,15 +780,15 @@ margin-top: 25px;
     .about_container{
         width: 80%;
         height: auto;
-       position: relative;
         display: flex;
         position:relative;
         top:0;
-        left: 700;
+        left: 30%;
     }
 
     .about-content {
         width: 50%;
+        max-width: 1500px;
         height: auto;
         background-color: #F9F9F9;
         display: flex;

@@ -32,6 +32,7 @@ const aboutNav = document.querySelectorAll('.nav-toggle2');
 const navHighlight = document.getElementsByClassName("navHighlight")[0];
 let gridImagses = document.querySelectorAll(".grid-img");
 let mobileProperties = document.querySelectorAll(".property");
+let aboutBtn = document.querySelector("#about-button")
 
 
 
@@ -90,7 +91,7 @@ const four = {
     propertyImg: ["assets/sidekix-media-t294_ZZP2pg-unsplash.jpg", "assets/zac-gudakov-lk-APuu-T5A-unsplash.jpg", "assets/spacejoy-8wDnylxemkk-unsplash.jpg", "assets/steven-ungermann-1AF5hP6F4tI-unsplash.jpg"],
     h1: "The Grand Exchange",
     h3: "London",
-    p: "4 Bedrooms 2 Bathrooms ",
+    p: "4 Bedrooms 2 Bathrooms",
     l1: "Spacious 4 Bedrooms & 2 Bathrooms",
     l2: "Mid Terraced with Driveway",
     l3: "Designer kitchen plus appliances to each home",
@@ -141,17 +142,17 @@ const aboutThree = {
 };
 
 const aboutFour = {
-    propertyImg: ["sidekix-media-t294_ZZP2pg-unsplash.jpg", "zac-gudakov-lk-APuu-T5A-unsplash.jpg", "spacejoy-8wDnylxemkk-unsplash.jpg", "steven-ungermann-1AF5hP6F4tI-unsplash.jpg"],
-    h1: "The Grand Exchange",
-    h3: "London",
-    p: "1-Bed Apartment, 2-Bed Apartment "
+    h2: "Partnerships",
+    p: "Our residential clients can typically buy lower than market value – ensuring a better return on investment – while our first-class residential units and award-winning customer service can help you realise your investment ambitions.",
+    p2: "We’re able to provide all of the knowledge and investor resources you need – with a dedicated research team consistently working to support your research, regardless of your experience or level of knowledge.",
+    p3: "Finally, with offices around the globe, we've helped deliver a vast portfolio in key UK investment hotspots. We're proud of our heritage and what we've achieved so far."
 };
 
 const aboutFive = {
-    propertyImg: ["sidekix-media-1vMz2_MclrM-unsplash.jpg", "ralph-ravi-kayden-JDBVXignFdA-unsplash.jpg", "sidekix-media-8qNuR1lIv_k-unsplash.jpg", "francesca-tosolini-FX1EbT-jKBQ-unsplash.jpg"],
-    h1: "Queen's Court",
-    h3: "London",
-    p: "1-Bed Apartment, 2-Bed Apartment "
+    h2: "Our Approach",
+    p: "Where we differ from other property investment companies is our focus on delivering an end-to-end service. We're always focused on the client and that applies to all of our work – whether that's sourcing the highest-quality properties; helping our clients find the locations to suit their property strategies; supporting them through the purchase or providing a solid aftercare service.",
+    p2: "We specialise in off-plan property, which allows you to buy direct from the developer. This provides our residential clients with the chance to buy premium property at a lower market value, meaning a higher ceiling for building better returns on your investment.",
+    p3: "Working with clients of all experience levels from around the globe, we have the ability to help you meet your goals – whatever they may be."
 };
 
 
@@ -259,14 +260,19 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
     aboutContainer.classList.add("containerAnimation");
     if (nav.id == "aboutOne") {
         aboutContent(aboutOne)
+        aboutBtn.style.display="none";
     } else if (nav.id == "aboutTwo") {
         aboutContent(aboutTwo)
+        aboutBtn.style.display="block";
     } else if (nav.id == "aboutThree") {
         aboutContent(aboutThree)
+        aboutBtn.style.display="none";
     } else if (nav.id == "aboutFour") {
         aboutContent(aboutFour)
+        aboutBtn.style.display="none";
     } else if (nav.id == "aboutFive") {
         aboutContent(aboutFive)
+        aboutBtn.style.display="none";
     };
 
     if (nav.id == "aboutOne") {
@@ -320,7 +326,9 @@ gridImagses.forEach((link) => link.addEventListener('click', function () {
         window.open("Developments4.html", "_self")
     } else if (link.id == "Property5") {
         window.open("Developments5.html", "_self")
-    }   
+    }   else if (link.id == "Property6") {
+        window.open("Developments6.html", "_self")
+    }
 }));
 
 

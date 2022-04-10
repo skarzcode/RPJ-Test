@@ -22,7 +22,7 @@ body{
     height: auto;
     min-height: 1000px;
     position: relative;
-    margin: 0 auto;
+    margin: 50px auto;
     
 }
 
@@ -668,13 +668,11 @@ button:hover{
     }
 
     .middle-container {
-        background-color: blue;
         height: auto;
         min-height: 1200px;
     }
 
     .feauture-container{
-        background-color: #2b3121;
         height: 760px;
     }
 
@@ -870,7 +868,6 @@ button:hover{
 }
 
 .feauture-container{
-    background-color: #2b3121;
    height: 600px;
    top: 20px;
 }
@@ -965,7 +962,6 @@ button:hover{
     min-height: 1100px;
     position: relative;
     margin: 50 auto;
-    background-color: blue;
 }
 
 
