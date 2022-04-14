@@ -38,7 +38,7 @@ let aboutBtn = document.querySelector("#about-button")
 
 
 
-
+// individual objects containing dynamic data  for development pages consisting of the slider images,property name,price,location,bedrooms and more
 const one = {
     propertyImg: ["assets/spacejoy-tAuc4H7Qf9s-unsplash.jpg", "assets/steven-ungermann-Aac7IlKnYX8-unsplash.jpg", "assets/carl-gartman-eUvshcvtULI-unsplash.jpg", "assets/sidekix-media-WgkA3CSFrjc-unsplash.jpg"],
     h1: "105 BroadWay",
@@ -119,7 +119,7 @@ const five = {
     floor: "Third Floor"
 };
 
-
+// individual objects containing dynamic data for about pages
 const aboutOne = {
     h2: "WHO WE ARE",
     p: "Regal London is one of London's leading privately owned mixed-use real estate developers. We specialise in residential-led mixed-use developments and have delivered successful projects across London, from Kensington to Tower Hamlets and from Barnet to Shoreditch.",
@@ -161,7 +161,7 @@ const aboutFive = {
 
 
 
-
+// Function to repopulate the midle section of the development page with its corresponding data
 propertyBtn.forEach((btn) => btn.addEventListener('click', function () {
     radiobtn.checked = true;
     if (btn.id == "one") {
@@ -252,7 +252,7 @@ propertyBtn.forEach((btn) => btn.addEventListener('click', function () {
 }));
 
 
-
+// Function to repopulate the about container with the corresponding data.
 aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
     e.preventDefault;
     aboutContainer.classList.remove("containerAnimation");
@@ -286,6 +286,7 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
     } else if (nav.id == "aboutFive") {
         colorSwitcher(aboutNav, nav)
     }
+    // Function to highlight chosen nav
 
     function colorSwitcher(el, elHolder) {
         for (let C = 0; C < 5; C++) {
@@ -304,6 +305,7 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
 
 
 aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
+    // function to add class with css animation which slides in the content from the bottom everytime it is clicked
     e.preventDefault;
     nav.classList.add("navClicked");
     void nav.offsetWidth;
@@ -315,7 +317,7 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
 
 
 gridImagses.forEach((link) => link.addEventListener('click', function () {
-
+// going to set dev page when clicked
     if (link.id == "Property1") {
         window.open("Developments.html", "_self")
     } else if (link.id == "Property2") {
@@ -349,7 +351,7 @@ mobileProperties.forEach((link) => link.addEventListener('click', function () {
 
 
 
-
+// Function for Faqs section
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
 
@@ -364,7 +366,7 @@ function toggleAccordion() {
 
 items.forEach((item) => item.addEventListener('click', toggleAccordion))
 
-
+// Animations for on scroll
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", reveal2);
 
